@@ -13,7 +13,10 @@ export const productsApi = createApi({
             query: (id) => `products/${id}`,
             cacheTime: 3000,
         }),
+        searchProducts: builder.query({
+            query: (query) => `products?search=${encodeURIComponent(query)}`,
+        }),
     }),
 });
 
-export const { useGetAllProductsQuery, useGetSingleProductQuery } = productsApi;
+export const { useGetAllProductsQuery, useGetSingleProductQuery, useSearchProductsQuery } = productsApi;
