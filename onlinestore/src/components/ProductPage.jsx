@@ -12,7 +12,7 @@ const ProductPage = () => {
   return (
     <section className="text-gray-700 body-font overflow-hidden bg-white h-[500px] ">
       <div className="container px-5 mx-auto">
-        <div className="lg:w-4/5 mx-auto flex flex-wrap">
+        <div className="lg:w-4/5 mx-auto flex flex-wrap  h-510">
           <img alt="ecommerce" className="lg:w-1/2 w-full object-contain object-center  rounded border border-gray-200 mt-10" src={product?.image} />
           <div className="lg:w-1/2 w-full lg:pl-10   lg:py-12 flex flex-col  justify-center ">
             <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">{product?.title}
